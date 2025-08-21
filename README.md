@@ -12,3 +12,8 @@
 - `parameterized constructor` concept using `Car.java`
 - `copy constructor` concept using `Sphere.java`
 - `object orientation` of `Library.java`, `Book.java` and `Main.java`
+
+## Method Overloading / Compile Time Polymorphism / Static Binding
+
+## Method Overriding / Runtime Polymorphism / Dynamic Binding
+- `User Comparison` using `toString()` method of `Object` class (Our class is `User.java`)
