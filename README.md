@@ -16,8 +16,14 @@
 ## Method Overloading / Compile Time Polymorphism / Static Binding (OOP)
 
 ## Inheritance
-- Basic Inheritance Concept using `Parent.java` 
+- Inheritance Theory (Definitin, Types, Advantages and Idea)
+- Single Inheritance: `extends` keyword and Constructor Chaining using `Parent.java` and `super()` 
+- Single Inheritance: Accessing methods `Person.java` 
+- Hierarchical Inheritance: Implementation using `Vehicle.java`
 
 ## Method Overriding / Runtime Polymorphism / Dynamic Binding (OOP)
--  
+- Basic Overriding using `Shape.java`   
+- Real life example using `Employee.java` and super class method calling by `super keyword`
+- Common Confusion about Upcasting using `Animal.java`
+- Complexity of Downcasting using `Man.java`
 - `User Comparison` using `toString()` method of `java.lang.Object` class (Our class is `User.java`)

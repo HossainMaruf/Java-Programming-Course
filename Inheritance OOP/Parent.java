@@ -1,28 +1,27 @@
 public class Parent {
-   public Parent() {
-    System.out.println("From Parent");
-   } 
-   public void displayText() {
-    System.out.println("From displayText() function");
-   }
+    Parent() {
+        System.out.println("From Parent");
+    }
+    void displayText() {
+        System.out.println("From parent displayText()");
+    }
 }
 
 class Child extends Parent {
-    // displayText() is available
-    public Child() {
+    Child() {
+        // System.out.println("From Child"); // ERROR
         super();
+        System.out.println("From Child");
     }
-    public void displayInfo() {
-        System.out.println("From displayInfo() function");
+    void displayInfo() {
+        System.out.println("From parent displayInfo()");
     }
 }
 
 class Main {
     public static void main(String[] args) {
-    //    new Parent(); 
-    // new Child(); // From Parent
-       Child c = new Child();
-    //    c.Parent(); // unavailable because Parent() is contructor, won't inherited
+        // Parent p = new Parent();
+        Child c = new Child(); // Again From Parent
         c.displayText();
         c.displayInfo();
     }

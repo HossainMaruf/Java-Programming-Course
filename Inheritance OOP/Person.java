@@ -2,27 +2,34 @@ public class Person {
     private String name;
     private int id;
 
-    // public Person(String name, int id) { this.name = name; this.id = id; }
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
+    Person(String name, int id) { 
+        this.name = name; this.id = id; 
+        System.out.println("From Person");
+    }
+    String getName() { return name; }
+    void setName(String name) { this.name = name; }
+    int getId() { return id; }
+    void setId(int id) { this.id = id; }
+    void displayInfo() {
+        System.out.println(name + "\t" + id);
+    }
 }
 
 class Student extends Person {
-    // public Student(String name, int id) {
-    //     System.out.println("Student Constructor"); // ERROR
-    //     super(name, id); // super() should be the first statement
-    // }
-    /**
-     * constructors are not inherited
-     */
+    public Student(String name, int id) {
+        // System.out.println("Student Constructor"); // ERROR
+        super(name, id); // super() should be the first statement
+        System.out.println("From Student");
+    }
 }
 
 class Main {
-    // Person p = new Person("Maruf", 101);
-    // Student s = new Student("Hossain", 1001);
-    Person p = new Person();
-    Student s = new Student();
-    p.setName("Maruf");
+    public static void main(String[] args) {
+        Student s = new Student("Maruf", 1001);
+        s.displayInfo();
+        s.setName("Hossain");
+        s.setId(2001);
+        System.out.println(s.getName());
+        System.out.println(s.getId());
+    }
 }
