@@ -3,7 +3,6 @@ public class Book {
    private String author;
    private String isbn;
    private int publicationYear;
-   private boolean isAvailable;
    private int stock;
    Book(String title, String author, String isbn, int year, int stock) {
     this.title = title;
@@ -21,5 +20,4 @@ public class Book {
    public int getPublicationYear() { return publicationYear; }
    public void setPublicationYear(int publicationYear) { this.publicationYear = publicationYear; }
    public boolean isAvailable() { return stock > 0 ? true : false; }
-   public void setAvailable(boolean isAvailable) { this.isAvailable = isAvailable; }
 }

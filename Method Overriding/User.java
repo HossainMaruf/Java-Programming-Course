@@ -12,12 +12,5 @@ public class User {
     }
 }
 
-class Main {
-    public static void main(String[] args) {
-       User u1 = new User("Maruf", 1010); 
-       User u2 = new User("Maruf", 1010); 
-       System.out.println(u1.toString(u2));
-    }
-}
 
 
