@@ -16,6 +16,7 @@
 ## Method Overloading / Compile Time Polymorphism / Static Binding (OOP)
 - Basic Idea using `Printer.java` of exact parameter type matching
 - Type auto promotion idea using `Finder.java` when exact match failed
+- Ambiguity problem when multiple match `Matcher.java`
 
 ## Inheritance
 - Inheritance Theory (Definitin, Types, Advantages and Idea)
@@ -34,3 +35,18 @@
 
 ## java.lang.Object Class (Topmost Class of Java)
 - `User Comparison` using `toString()` method of `java.lang.Object` class (Our class is `User.java`)
+
+
+## Access Modifiers (default, public, private, protected)
+- Compiler Generated Constructor
+```JAVA
+public ConstructorName() {
+    super();
+}
+```
+|Modifier Name| Same Class | Same Package | Subclass (Other Package) | Other Classes | 
+|------|--------|-----|------|-------|
+| default | ✔️  |  ✔️ | ❌ | ❌  |
+| private | ✔️  |  ️❌ |  ❌ | ❌  |
+| public  | ️ ✔️ |  ✔️️ | ✔️  |  ✔️️ |
+| protected |✔️ |  ✔️ | ✔️ |  ❌️ |
