@@ -10,7 +10,7 @@ class Father extends Grandfather {
    Father() {
     System.out.println("Father");
    }
-    void FatherAdviceMarry() {
+   void FatherAdviceMarry() {
         System.err.println("you will marry Karina");
     }
 }
